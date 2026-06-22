@@ -13,7 +13,7 @@ source:
   sha256: 3696539061b89210491016192b22af7142bb55c8fb288b6bbfe904eb5b362e31
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -35,7 +35,7 @@ requirements:
     - numpy >=1.26.0,<=2.4.6
     - pandas >=2.0.3,<=3.0.3
     - scipy >=1.11.1,<=1.17.1
-    - typing_extensions  # ase requires it
+
 tests:
   - python:
       imports:
