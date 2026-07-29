@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: vaspparser
-  version: 0.0.7
+  version: "0.0.8"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 2d828592e2cc2afe5ef483496d89bf3ac70689800b3c7e29381ea18abdacec0d
+  sha256: b841d0bfdb6751df85ab95f6cbb8a010b2987157170a3bf1c58c216d2994fc4b
 
 build:
   number: 0
