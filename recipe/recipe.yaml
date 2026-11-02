@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: vaspparser
-  version: "0.1.1"
+  version: 0.1.2
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 440ddb22376c0293a0b5d6d9252a70b9aeb34f8f894ebe3dca7f0f4d610b6f17
+  sha256: 4d2acab7bbcddf4a5e583d5c6cb8d9fde17d81d8e2f2112325ae2e44553aaef5
 
 build:
   number: 0
@@ -33,7 +33,7 @@ requirements:
     - ase >=3.23.0,<3.30.0
     - defusedxml >=0.7.0,<0.8.0
     - numpy >=1.26.0,<2.6.0
-    - pandas >=2.0.3,<3.1.0
+    - pandas >=2.0.3,<3.2.0
     - scipy >=1.11.1,<1.19.0
 tests:
   - python:
